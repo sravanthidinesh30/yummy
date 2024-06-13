@@ -1,0 +1,210 @@
+*{
+	margin: 0;
+	padding: 0;
+	display: wrap;
+}
+
+header{
+	background-color: #483D8B;
+	width: 100%;
+}
+
+
+
+img{
+	width: 50px;
+}
+list{
+	list-style-type: none;
+}
+.container yummy{
+	background-color: white;
+	position: fixed;
+	top: 40px;
+}
+ul{
+	margin: auto;
+	padding: 0px;
+}
+.nav-icon{
+	color: grey;
+}
+.nav-d{
+	background-color: skyblue;
+		color: white;
+	text-transform: capitalize;
+}
+#und ul{
+	position: absolute;
+}
+#und ul:before{
+	
+	content: '';
+	width: 50px;
+	margin-top: 10px;
+	height: 2px;
+	background-color: red;
+	top: 30px;
+	left: 0px;
+	text-danger;
+	position:absolute ;
+}
+#und ul:hover{
+	visibility: visible;
+	color: black;
+
+}
+.dropdown-item:before{
+
+}
+.bg-grey{
+	background-color: lightgrey;
+	
+
+}
+.container-fluid{
+	top: 50px;
+
+}
+
+
+#fa{
+	font-size: 30px;
+	color:#de3144;
+	margin-top: 10px;
+	gap: 5px;
+}
+.img-fluid{
+	width: 75%;
+
+}
+#emp{
+ width: 800px;
+ background-repeat: none;
+ background-image: url(images/y2.jpg);
+}
+.us{
+	text-align: center;
+}
+#us{
+	text-align: center;
+	font-family:  "fantasy", "Copperplate", papyrus;
+	text-transform: capitalize;
+}
+#yo{
+	width: 600px;
+	position: relative;
+	margin-top: 1.5rem;
+}
+#id{
+	position: relative;
+	 translate:(-50%, -50%);
+	 top: 50px;
+	 left: 50px;
+}
+
+#id p{
+	position: relative;
+	top: 50px;
+	left: 50px;
+
+}
+.car{
+	width: 100%;
+	color: white;
+	background-color: #e91229;
+
+}
+#btn{
+	font-size: 20px;
+	background-color: #fa4572;
+	color: white;
+	text-transform: capitalize;
+}
+#btn:hover{
+background-color: white;
+color: red;
+font-size: 20px;
+text-transform: capitalize;
+}
+#ard{
+	color: #fa4572;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	font-size: 30px;
+	font-weight: 10px;
+	margin-bottom: 32px;
+	border-radius: 50px;
+	background-color: #fcd0d5;
+		
+}
+.fa-check{
+	color: indianred;
+}
+.list{
+	list-style-type: none;
+}
+.fa {
+    font-family: arial;
+    font-weight:30px;
+}
+.img-fluid{
+	max-width: 100%;
+	height: auto;
+}
+.divider{
+	background-repeat:repeat;
+	background-size: cover;
+
+background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.7786764363948704) 100%);
+background-image:linear-gradient( rgba(203,98,32,0.5) , rgba(12,217,32,0.2),rgba(75,9,121,0.5)  ) , url("images/p2.jpg");
+			position: relative;
+		}
+
+.check{
+		font-family:  "fantasy", "Copperplate", papyrus;
+
+}
+.about .book{
+	background-color: white;
+	left: 10%;
+	right: 10%;
+	bottom:10%;
+	padding: 20px;
+	box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.8);
+	text-align: center;
+
+}
+.fa-solid{
+	font-size: 1000;
+}
+.fa-circle-play{
+	width: 80px;
+	height: 80px;
+	color: red;
+	left:30%;
+top:calc(50% - 37px);
+
+	position:absolute;
+	background: radial-gradient(red 50%, rgba(206, 18, 18, 0.4) 52%);
+overflow: hidden;
+	border-radius: 50%;
+	display: block;
+}
+.menu-list{
+	position: relative;
+	border-bottom: 2px grey solid;
+}
+.menu-list-starters{
+	position: relative;
+		border-bottom: 2px red solid;
+
+}
+.menu-list:active{
+	position: relative;
+	border-bottom: 2px red solid;
+	cursor: pointer;
+}

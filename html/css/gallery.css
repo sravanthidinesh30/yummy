@@ -1,0 +1,58 @@
+*{
+    margin:0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: capitalize;
+    text-transform: capitalize;
+}
+.gallery-title{
+	 font-size: 36px;
+    color: red;
+    font-weight: 500;
+    margin-bottom: 70px;
+
+}
+.gallery-title{
+    position: relative;
+}
+.gallery-title:before{
+    content: '';
+    width: 50px;
+    height: 2px;
+    background-color: darkgreen;
+    top: 40px;
+    center: 20px;
+    position: absolute;
+
+}
+.btn{
+    height: 40px;
+    width: 140px;
+    font-size: 20px;
+    line-height: 40px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+}
+.btn .active{
+    background-color: red;
+}
+.filter-button:hover
+{
+    font-size: 18px;
+    border: 1px solid darkred;
+    border-radius: 5px;
+    text-align: center;
+    color: red;
+ background-color: blue;
+}
+.btn-default:active .filter-button:active
+{
+    background-color: red;
+    color: white;
+}
+gallery_product{
+    padding: 1px;
+    margin-right: 1px;
+}
+}

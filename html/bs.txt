@@ -1,0 +1,67 @@
+project creation folder
+1.Grid system
+2.Components
+3.Utilites
+links:
+css: bootstrap.min.css
+ javascript: popper.min.js
+javascript: bootstrap.min.js
+
+
+meta tag is using  for responsive:
+<meta charset="utf-8">
+<meta name:"viewport" content="width=device-width,initial-scale-1">
+
+CDN:content delivery network
+
+1.Grid system: use our powerfull mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system,six default responsives sites and 
+dozens of predifined classes
+
+12columns
+1 row
+.container--->980pxas per device it will change
+.container-fluid---->100% width
+
+Grid options:
+bootstraps grid system can adapt across all six default breakpoints,and any breakpointa you customize.the six default grid options are as follows
+
+Xs(Extra small)--->mobiles-----><576px
+small(sm)--->tablets-----> 576 to 767px
+Medium(md)--->laptops----> 768 to 991px
+large(l)--->                  ----->992 to 1199px
+xlarge(xl)----->1200 to1399px
+xxxlarge---->1400px
+
+
+2.components:
+buttons:
+<a class= "btn btn-primary">button</a>
+<button class="btn btn-primary">reset</button>
+<input class= "btn btn-primary" type="button" value='go";
+<input class= "btn btn-primary" type="submit" value="signup";
+<input class= "btn btn-primary" type="reset" value="reset";
+
+OUTLINE:
+outline-primary
+SIZE:lg,sm
+button can be disbled(no action)
+<button class="btn btn-primary btn-disabled">reset</button>
+
+
+ content: "";
+    position: absolute;
+    width: 7.5%;
+    left: 46.5%;
+    height: 45px;
+    border-bottom: 1px solid ;
+
+
+
+https://youtu.be/LXb3EKWsInQ
+
+
+
+
+.card h1{
+	font-family: "fantasy", "Copperplate", papyrus;
+}

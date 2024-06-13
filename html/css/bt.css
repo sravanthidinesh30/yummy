@@ -1,0 +1,71 @@
+*{
+	display: wrap;
+}
+.row h2:after{
+
+	content: '';
+	width: 50px;
+	height: 2px;
+	background-color: red;
+	top: 30px;
+	left: 0px;
+	position: absolute;
+}
+.row h2{
+	position:relative;
+
+}
+.row h2 :after{
+	content: '';
+	width: 50px;
+	margin-top: 10px;
+	height: 2px;
+	background-color: red;
+	top: 30px;
+	left: 0px;
+	text-danger;
+	position: absolute;
+
+}
+{
+	display: inline-block;
+	font-size: XXX-large;
+}
+.row h4{
+
+	position:relative;
+
+}
+.row h4 :after{
+	content: '';
+	width: 50px;
+	margin-top: 10px;
+	height: 2px;
+	background-color: red;
+	top: 30px;
+	left: 0px;
+	text-danger;
+	position: absolute;
+
+}
+.list border-bottom :before{
+	border-bottom: 1px solid;
+}
+.span i:before{
+	color: dark-50;
+}
+#phone{
+	color: #cd5c5c;
+}
+.h5 #use{
+	font-size: 20px;
+}
+footer{
+	font-size: 10px;
+}
+.li angle{
+	font-size: 40px;
+}
+.funfact i{
+	font-size: 45px;
+}
