@@ -201,115 +201,551 @@ color: black;
 			  font-family: "fantasy", "Copperplate", papyrus;
 
 }
-#id{
-	position: relative;
-	 translate:(-50%, -50%);
-	 top: 50px;
-	 left: 50px;
+#decorate{
+	 
+  position: relative;
+ 
 }
-
-#id p{
-	position: relative;
-	top: 50px;
-	left: 50px;
-
+#decorate img{
+ height: auto;
+ width: 100%;
 }
-.car{
-	width: 100%;
-	color: white;
-	background-color: #e91229;
-
-}
-#btn{
-	font-size: 20px;
-	background-color: #fa4572;
-	color: white;
-	text-transform: capitalize;
-}
-#btn:hover{
-background-color: white;
-color: red;
-font-size: 20px;
-text-transform: capitalize;
-}
-#ard{
-	color: #fa4572;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	width: 64px;
-	height: 64px;
-	font-size: 30px;
-	font-weight: 10px;
-	margin-bottom: 32px;
-	border-radius: 50px;
-	background-color: #fcd0d5;
-		
-}
-.fa-check{
-	color: indianred;
+.book {
+color: black;  
+ background-color: white; /* Add a semi-transparent background for readability */
+   padding: 20px;
+   border-radius: 10px;
+text-align: center;
+margin-top: 20px;
+border: 2px solid darkgrey;
+height: 100px;
+width:100%;
+ }
+ .fa-check{
+  color:#de3144  ;
 }
 .list{
-	list-style-type: none;
+  list-style-type: none;
 }
-.fa {
-    font-family: arial;
-    font-weight:30px;
+.video{
+  position: relative;
+  display: inline-block;
 }
-.img-fluid{
-	max-width: 100%;
-	height: auto;
-}
-.divider{
-	background-repeat:repeat;
-	background-size: cover;
-
-background-color: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,0.7786764363948704) 100%);
-background-image:linear-gradient( rgba(203,98,32,0.5) , rgba(12,217,32,0.2),rgba(75,9,121,0.5)  ) , url("images/p2.jpg");
-			position: relative;
-		}
-
-.check{
-		font-family:  "fantasy", "Copperplate", papyrus;
-
-}
-.about .book{
-	background-color: white;
-	left: 10%;
-	right: 10%;
-	bottom:10%;
-	padding: 20px;
-	box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.8);
-	text-align: center;
-
-}
-.fa-solid{
-	font-size: 1000;
+.video img{
+display: block;
+width: 100%;
 }
 .fa-circle-play{
-	width: 80px;
-	height: 80px;
-	color: red;
-	left:30%;
-top:calc(50% - 37px);
-
-	position:absolute;
-	background: radial-gradient(red 50%, rgba(206, 18, 18, 0.4) 52%);
+  width: 80px;
+height: 80px;
+color: red;
+left:50%;
+top: 50%;
+position:absolute;
+transform: translate(-50%,-50%);
+background: radial-gradient(red 50%, rgba(206, 18, 18, 0.4) 52%);
 overflow: hidden;
-	border-radius: 50%;
-	display: block;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.why{
+    background-color: rgba(182, 172, 177, 0.14);
+
+}
+.choose{
+  background-color:#CF0F0F;
+  text-align: center;
+  justify-content: center;
+  color: white;
+}
+.learn{
+  background-color:#EA1E1E;
+  font-size: 20px;
+color: white;
+text-transform: capitalize;
+
+height: 30px;
+width: 80%;
+border-radius: 50px;
+border: none;
+}
+.learn:hover{
+  background-color: white;
+  color:#EA1E1E ;
+}
+.icons{
+  background-color: floralwhite;
+  text-align: center;
+  justify-content: center;
+}
+#ard{
+  color: #CF0F0F;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-right: 5px;	width: 64px;
+height: 64px;
+font-size: 30px;
+font-weight: 10px;
+margin-bottom: 32px;
+border-radius: 50px;
+background-color: #fcd0d5;
+  
+}
+#ard:hover{
+  color: white;
+  background-color: #CF0F0F;
+}
+.counter{
+  position: relative;
+
+          background-image: url('images/y3.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+padding: 50px 0;	
+color: white;			
+text-align:center;  	
+}
+.counter h1, .counter h3 {
+          margin: 0;
+      }
+      .counter::before{
+         content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(42, 38, 41, 0.5); /* Semi-transparent overlay */
+          z-index: 1;
+      }
+       .counter .container-fluid {
+          position: relative;
+          z-index: 2;
+      }
+      .ourmenu h6{
+text-transform: capitalize;
+color: grey;
+font-weight: normal;
+      }
+      .check{
+  font-family:  "fantasy", "Copperplate", papyrus;
+
 }
 .menu-list{
-	position: relative;
-	border-bottom: 2px grey solid;
+position: relative;
+border-bottom: 2px solid grey;
 }
 .menu-list-starters{
-	position: relative;
-		border-bottom: 2px red solid;
+position: relative;
+border-bottom: 2px solid red;
+}
+.menu-list:hover{
+  border-bottom: 2px solid red;
 
 }
-.menu-list:active{
-	position: relative;
-	border-bottom: 2px red solid;
-	cursor: pointer;
+.tab h3{
+  font-family: "Shadows Into Light", cursive;
+
 }
+.Starters{
+max-width: 100%;
+height: auto;
+}
+.Starters h3{
+font-family: "Gill Sans Extrabold", sans-serif;
+}
+.Starters h5{
+color: red;
+}
+.testimonials{
+  background-color: rgba(182, 172, 177, 0.14);
+text-align: center;
+}
+.testimonials h1{
+        font-family: "fantasy", "Copperplate", papyrus;
+text-transform: capitalize;
+}
+.testimonials h6{
+color: grey;
+font-weight: normal;
+
+}
+.testimonials h6, .testimonials h1{
+text-align: center;
+
+}
+.testimonials span{
+color: #de3144;
+}
+
+            .image{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  flex-shrink: 0;
+}
+.image img{
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+
+}
+
+.testi{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 30px 0px;
+}
+.text{
+  position: relative;
+padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-end;
+}
+.text > p{
+  position: relative;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+.text > p::before{
+  content: open-quote;
+  top: -30px;
+  left: 10px;
+  font-family: sans-serif;
+  font-size: 80px;
+  font-weight: 500px;
+  line-height: 1;
+  position: absolute;
+  color:lightpink ;
+  height: 40px;
+  z-index: -1;
+  
+}
+.text > p::after{
+  content: close-quote;
+  right: 0px;
+  bottom: -25px;
+  font-family: sans-serif;
+  font-size: 80px;
+  font-weight: 500px;
+  line-height: 1;
+  position: absolute;
+  color:lightpink ;
+  height: 40px;
+  z-index: -1;
+}
+.text .name{
+  position: relative;
+  width: fit-content;
+  line-height: 1;
+  text-transform: uppercase;
+                    font-family: "fantasy", "Copperplate", papyrus;
+
+
+}
+
+.text .name h6{
+  font-size: 12px;
+  color: blue;
+}
+.text .name p{
+  font-size: 7px;
+  text-align: left;
+  padding-left: 5px;
+}
+
+
+
+@media screen and (min-width: 768px){
+   .testi{
+      flex-direction: row;
+      padding: 30px 100px;
+  }
+.image{
+  width: 200px;
+  height: 200px;
+}
+}
+.testimonials .fa-star{
+color: #F7CD12;
+}
+.img-wrapper{max-width: 100%;
+height: 10em;
+display: flex;
+justify-content: center;
+align-items: flex-start;
+}
+.parties{
+width:1500px;
+display: flex;
+overflow-x: scroll;
+position: relative;
+text-align: center;
+color: white;
+}
+.parties div{
+  width: 100%;
+ display: grid;
+ grid-template-columns: auto auto auto;
+ padding: 10px;
+ grid-gap: 10px;
+ flex: none;
+}
+.parties div img{
+ width: 100%;
+transition: transform 0.5s;
+}
+.parties::-webkit-scrollbar{
+ display: none;
+}
+.wrap{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 10% auto;
+
+}
+.fa-chevron-left, .fa-chevron-right{
+ width: 50px;
+ cursor: pointer;
+ margin: 40px;
+}
+.parties div img:hover{
+cursor: pointer;
+transform: scale(1.1);
+}.bottom-left{
+position: absolute;
+bottom: 10px;
+left: 15px;
+          color: whitesmoke;
+          padding: 10px;
+          border-radius: 5px;
+                                font-family: "fantasy", "Copperplate", papyrus;
+text-transform: capitalize;
+}
+
+.parties span {
+          position: relative;
+          display: inline-block;
+      }
+      .chefs{
+        background-color: rgba(182, 172, 177, 0.14);
+text-align: center;
+      }
+      .chefs h1{
+         font-family: "fantasy", "Copperplate", papyrus;
+text-transform: capitalize;
+      }
+      .chefs span{
+        color:#de3144 ;
+      }
+      .chefs h6{
+        color: grey;
+        text-transform: uppercase;
+        font-weight: normal;
+
+      }
+      .chef h6{
+        color: grey;
+        text-transform: capitalize;
+      }
+      .chef h4{
+        text-transform: capitalize;
+      }
+      .chef:hover{
+        cursor: pointer;
+transform: scale(1.1);
+box-shadow: 0px -10px 10px lightgrey;
+      }
+      .chef{
+          transition: transform 0.5s ease-in-out; /* Smooth transition */
+position: relative;
+      }
+      #booktable{
+        text-align: center;
+
+      }
+      .chefs.card-body {
+width: 100%;
+max-width: 25rem;
+margin: 0 auto;
+justify-content: center;
+text-align: center;
+}
+      #booktable h6{
+        color: grey;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      #booktable h1 span{
+        color: #de3144;
+      }
+      #booktable h1{
+     font-family: "fantasy", "Copperplate", papyrus;
+     text-transform: capitalize;
+      }
+      .stay{
+        background-color: rgba(182, 172, 177, 0.14);
+      }
+      .php-email-form{
+        padding: 30px;
+        margin-top: 30px;
+
+      }
+      .php-email-form input{
+        display: flex;
+        padding: 10px 10px;
+        display: grid;
+        columns: 100px;
+      }
+      .footer{
+        background-color: #212529;
+        color: white;
+        text-transform: capitalize;
+        text-align: center;
+      }
+      .footer .icon{
+        margin-right: 60px;
+        color: darkred;
+        font-size: 35px;
+      }
+      .socialinks{
+        padding-top: 15px;
+      }
+      .socialinks .fa{
+        border: 2px solid white;
+        border-radius: 50%;
+        padding: 10px;
+      }
+      .copyright{
+        text-transform: capitalize;
+        text-align: center;
+        display: inline-block;
+padding-top:10px ; 
+       border-top: 2px solid grey;
+}
+.gallery{
+text-align: center;
+          background-color: rgba(182, 172, 177, 0.14);
+
+
+}
+.gallery h6{
+text-transform: uppercase;
+color:grey ;
+font-weight: normal;
+}
+.gallery  span{
+ color: #de3144;
+ text-transform: capitalize;
+
+}
+.gallery h1{
+ text-transform: capitalize;
+        font-family: "fantasy", "Copperplate", papyrus;
+
+}
+.swiper-container{
+ width: 100%;
+ height: 400px;
+}
+.swiper-wrapper{
+ display: flex;
+ align-items: center;
+ margin: 60px;
+}
+.swiper-slide{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: auto;
+ height: 100%;
+     transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition for transformations */
+
+}
+.swiper-slide img{
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+     transition: transform 0.3s ease; /* Smooth transition for transformations */
+
+}
+.swiper-slide-active img{
+  transform: scale(1.2); /* Increase the size of the active slide */
+  border: 5px solid #de3144; /* Add a border to the active slide */
+transition: ;
+}
+.swiper-pagination {
+  position: relative;
+  bottom: px; /* Position the pagination 10px from the bottom */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+
+}
+.contact{
+text-align: center;
+      }
+      .contact h1{
+         font-family: "fantasy", "Copperplate", papyrus;
+text-transform: capitalize;
+      }
+      .contact span{
+        color:#de3144 ;
+      }
+      .contact h6{
+        color: grey;
+        text-transform: uppercase;
+        font-weight: normal;
+
+      }
+      iframe{
+        width: 100%;
+        height: 400px;
+      }
+      .contact .icon{
+        font-size: 32px;
+        font-weight: normal;
+        border: 1px solid darkred;
+        padding: 15px;
+        border-radius: 50%;
+        background-color: #de3144;
+        color: white;
+        margin-left: 10px;
+        font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      }
+      .contact .card-body{
+        margin-left: 20px;
+        padding: 15px;
+        margin: 10px;
+float: left;
+      }
+      .contact .card{
+                  box-shadow: 0 0 25px lightgrey;
+                  margin: 10px;
+max-width: 100%;
+      }
+      .contact .card-title{
+        margin-right: 40px;
+      float: left;
+      text-transform: capitalize;
+      }
+      .contact .card-text{
+        float: left;
+      }
+      .form{
+
+      }
+      
