@@ -1,53 +1,153 @@
-*{
-	margin: 0;
-	padding: 0;
-	display: wrap;
+** {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-header{
-	background-color: #483D8B;
-	width: 100%;
+.logo {
+  color: black;
+}
+
+.logo span {
+  color: red;
+}
+
+.navlist {
+  list-style-type: none;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.navbarSection {
+  background-color: white;
+  margin: 10px;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+}
+
+
+.close {
+  display: none; /* Hidden by default */
+}
+
+.close.show {
+  display: block; /* Show when 'show' class is added */
+}
+
+@media screen and (max-width: 768px) {
+  .navBar {
+    position: absolute;
+    background-color: white;
+    height: max-content;
+    width: 80%;
+    border-radius: 1rem;
+    top: 6rem;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 2000;
+    box-shadow: 0 2px 4px rgba(2, 15, 29, 0.9);
+    transition: .3s ease-in-out;
+    display: none;
+  }
+
+  .navlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+    padding: 5px;
+  }
+
+  .nav-item {
+    padding: 5px;
+  }
+
+  .nav-link {
+    color: grey;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .booktable {
+    margin: 15px;
+    width: 40%;
+  }
+ 
+.navBar.show {
+  display: block; /* Show when 'show' class is added */
+}
+
+
+  .close {
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    font-size: 32px;
+    font-weight: 300;
+    color: red;
+  }
+
+  .nav-link:hover {
+    color: red;
+  }
+}
+
+.toggle .fa-bars {
+  font-size: 20px;
+  color: black;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #de3144;
+  color: red;
+}
+
+.nav-link.active {
+  color: red;
+}
+
+.navbar-brand {
+  font-size: 3rem;
+  color: black;
+  font-weight: bold;
+}
+
+.navbar-brand span {
+  color: red;
+}
+
+.nav-link {
+  margin-right: 10px;
+  margin-left: 10px;
+  color: grey;
+  text-transform: capitalize;
 }
 
 
 
-img{
-	width: 50px;
-}
-list{
-	list-style-type: none;
-}
-.container yummy{
-	background-color: white;
-	position: fixed;
-	top: 40px;
-}
-ul{
-	margin: auto;
-	padding: 0px;
-}
-.nav-icon{
-	color: grey;
-}
-.nav-d{
-	background-color: skyblue;
-		color: white;
-	text-transform: capitalize;
-}
-#und ul{
-	position: absolute;
-}
-#und ul:before{
-	
-	content: '';
-	width: 50px;
-	margin-top: 10px;
-	height: 2px;
-	background-color: red;
-	top: 30px;
-	left: 0px;
-	text-danger;
-	position:absolute ;
+
+.booktable{
+	color: white;
+	background-color: rgba(240, 40, 60, 1.0);
+border-radius: 60px;
+text-transform: capitalize;
+font-weight: normal;
+font-size: 18px;
+border: none;
+padding: 10px 10px;
+cursor: pointer;
 }
 #und ul:hover{
 	visibility: visible;

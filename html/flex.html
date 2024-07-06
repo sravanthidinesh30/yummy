@@ -56,13 +56,13 @@
         </li>
         <button class="booktable">book a table</button>
   </ul>
-  <div class="close" id="closeNav" onclick="closeNav()">
+  <div class="close" id="closeNav" onclick="shownav()">
     <i class="fa fa-times-circle icon" aria-hidden="true"></i>
 
   </div>
   
 </div>
-<div class="toggle" onclick="toggleNav()">
+<div class="toggle" onclick="shownav()">
     <i class="fa fa-bars" aria-hidden="true"></i>
 
   </div>
@@ -652,25 +652,38 @@
  
 </footer>
 <script>
-function toggleNav() {
-  var navBar = document.getElementById('navBar');
-  navBar.classList.toggle('show');
-}
-
-function closeNav() {
-  var navBar = document.getElementById('navBar');
-  navBar.classList.remove('show');
-}
 
 function shownav() {
-  var navBar = document.getElementById('navBar');
+  const navBar = document.getElementById('navBar');
+  const closeNav = document.getElementById('closeNav');
+   if (!navBar || !closeNav) {
+    console.error("Elements not found: navBar or closeNav");
+    return;
+  }
   navBar.classList.toggle('show');
+  closeNav.classList.toggle('show');
 }
 
-
+document.getElementById('closeNav').addEventListener('click', function() {
+  const navBar = document.getElementById('navBar');
+  const closeNav = document.getElementById('closeNav');
+   if (!navBar || !closeNav) {
+    console.error("Elements not found: navBar or closeNav");
+    return;
+  }
+  
+  navBar.classList.remove('show');
+  closeNav.classList.remove('show');
+});
+try{
   let scrollContainer =document.querySelector(".parties");
   let rightarrow =document.getElementById("rightarrow") ;
   let leftarrow =document.getElementById("leftarrow") ;
+
+ if (!scrollContainer || !rightArrow || !leftArrow) {
+    throw new Error("One or more elements are not found.");
+  }
+
 
   scrollContainer.addEventListener("wheel", (evt) =>{
     evt.preventDefault();
@@ -687,6 +700,10 @@ scrollContainer.style.scrollBehaviour = "smooth";
     scrollContainer.scrollLeft -= 900;
 
   });
+}
+catch(error){
+  console.error(error.message);
+}
 
   try{
 let swiper = new Swiper(".mySwiper", {
@@ -736,7 +753,7 @@ let swiper = new Swiper(".mySwiper", {
 }
 catch(error){
   console.error('error initializing Swiper;' ,error);
-}
+}/
 
 </script>
 
