@@ -12,6 +12,8 @@
 ">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </head>
 <body>
@@ -74,7 +76,7 @@
 
   </section>
 <!--===--->
-<section class="main">
+<section class="main ">
   <div class="container-fluid py-5">
     <div class="row py-5 container-fluid">
       <div class="col-lg-6 my-5 px-5 pt-3 text-center">
@@ -92,9 +94,9 @@
   </div>
 </section>
 <!--==================================================================-->
-<section class="Aboutus">
+<section class="Aboutus fade-up">
 
-<div class="container-fluid">
+<div class="container-fluid ">
   <div class="row">
     <div class="col-lg-12">
       <h6>About us</h6>
@@ -104,7 +106,7 @@
   
   </div>
 
-<div class="row container  bg-white my-5">
+<div class="row container  bg-white my-5 fade-up">
 <div class="col-lg-7 mx-5  position-relative" id="decorate">
       <img src="images/y2.jpg">
   <div class="book">
@@ -136,7 +138,7 @@
 
 </section>
 <!--=====--->
-<section class="why container-fluid ">
+<section class="why container-fluid fade-up">
   <div class="row  ">
       <div class="row  px-3 mx-5 my-5">
         <div class="col-lg-4 my-5 mx-3 choose pt-4 px-5">
@@ -172,9 +174,9 @@
 </section>
 
 <!--================================-->
-<section class="counter container  my-5 py-5" style="background-image: url(&quot;images/y3.jpg&quot;)">
-  <div class="container-fluid row justify-content-center my-5 py-5" >
-    <img src="">
+<section class="counter container  my-5 py-5 fade-up" style="background-image: url(&quot;images/y3.jpg&quot;)">
+  <div class="container-fluid row justify-content-center my-5 py-5 " >
+    
     <div class="col-lg-3">
       <h1 class="counterup">232</h1><h3>clients</h3>
     </div>
@@ -365,7 +367,7 @@
 </section>
 <!---=====-->
 
-<section class="container my-5 filter booktable" id="booktable" >
+<section class="container my-5 fade-up" id="booktable" >
   <div class="row">
     <h6>book a table</h6>
     <h1 class="my-3">book your <span>stay with us</span></h1>
@@ -671,6 +673,23 @@ let swiper = new Swiper(".mySwiper", {
   }
 });
 
+//fadeup//
+ $(document).ready(function() {
+    $(window).on('scroll', function() {
+            $('.fade-up').each(function() {
+
+      var sectionOffset = $('.fade-up').offset().top;
+      var windowHeight = $(window).height();
+      var scrollTop = $(window).scrollTop();
+
+      if (scrollTop + windowHeight > sectionOffset + 200) {
+        $('.fade-up').addClass('show');
+
+      }
+          });
+
+    });
+  });
 </script>
 </body>
 </html>

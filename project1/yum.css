@@ -329,6 +329,16 @@ text-align:center;
           position: relative;
           z-index: 2;
       }
+      .fade-up{
+        opacity: -2;
+        transform: translateY(20px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+
+      }
+      .fade-up.show{
+        opacity: 3;
+        transform: translateY(0px);
+      }
 
       .ourmenu h6{
 text-transform: capitalize;
