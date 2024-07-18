@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Filter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <style type="text/css">
+    /* Add your custom styles here */
+.container {
+    margin-top: 50px;
+}
+
+.ourmenu {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.menu-list {
+    cursor: pointer;
+}
+
+.filter {
+    display: none;
+}
+
+.filter-span.active {
+    font-weight: bold;
+    color: red;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+</style>
+    <section class="container ourmenu" id="ourmenu">
+        <div class="row my-5">
+            <div class="col- col-sm-12 col-md-12 col-lg-12">
+                <h6 class="text-center fw-normal">our menu</h6>
+                <h1 class="check text-center text-capitalize my-5">check your <span class="text-danger">yummy meal</span></h1>
+            </div>
+            <div class="row">
+                <div class="col- col-sm-12 col-md-12 col-lg-12 d-flex my-3 justify-content-center">
+                    <span class="mx-3 menu-list-starters active filter-span" data-filter="Starters">Starters</span>
+                    <span class="mx-3 menu-list filter-span" data-filter="Breakfast">Breakfast</span>
+                    <span class="mx-3 menu-list filter-span" data-filter="Lunch">Lunch</span>
+                    <span class="mx-3 menu-list filter-span" data-filter="Dinner">Dinner</span>
+                </div>
+                <div class="tab row text-center" data-aos="fade-up">
+                    <div class="col-lg-4 filter Starters">
+                        <img src="images/m1.png" alt="img-loading" class="Starters">
+                        <h3>Magnam Tiste</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$5.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Starters">
+                        <img src="images/m2.png" alt="img-loading" class="Starters">
+                        <h3>Aut Luia</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$14.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Starters">
+                        <img src="images/m3.png" alt="img-loading" class="Starters">
+                        <h3>Est Eligendi</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$8.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Starters">
+                        <img src="images/m4.png" alt="img-loading" class="Starters">
+                        <h3>Eos Luibusdam</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$12.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Starters">
+                        <img src="images/m5.png" alt="img-loading" class="Starters">
+                        <h3>Laboriosam Direva</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$9.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Starters">
+                        <img src="images/m6.png" alt="img-loading" class="Starters">
+                        <h3>Laboriosam Direva</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$10.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Breakfast">
+                        <img src="images/b1.jpeg" alt="img-loading" class="Breakfast">
+                        <h3>Breakfast Item 1</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$10.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Breakfast">
+                        <img src="images/b2.jpeg" alt="img-loading" class="Breakfast">
+                        <h3>Breakfast Item 2</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$10.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Breakfast">
+                        <img src="images/b7.jpeg" alt="img-loading" class="Breakfast">
+                        <h3>Breakfast Item 3</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$10.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Breakfast">
+                        <img src="images/b4.jpeg" alt="img-loading" class="Breakfast">
+                        <h3>Breakfast Item 4</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$10.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Breakfast">
+                        <img src="images/b5.jpeg" alt="img-loading" class="Breakfast">
+                        <h3>Breakfast Item 5</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$10.95</h5>
+                    </div>
+                    <div class="col-lg-4 filter Breakfast">
+                        <img src="images/b6.jpeg" alt="img-loading" class="Breakfast">
+                        <h3>Breakfast Item 6</h3>
+                        <p>Lorem, deren, trataro, filede, nerada</p>
+                        <h5>$10.95</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script >
+       $(document).ready(function() {
+    $(".filter-span").click(function() {
+        var value = $(this).attr('data-filter');
+        
+        if (value == "Starters") {
+            $('.filter').hide(); // First, hide all items
+            $('.Starters').show('1000'); // Then show only the items with the Starters class
+        } else {
+            $(".filter").hide('3000');
+            $('.filter.' + value).show('3000');
+        }
+        
+        $(".filter-span").removeClass("active");
+        $(this).addClass("active");
+    });
+
+    // Show the starters by default
+    $('.filter').hide();
+    $('.Starters').show('1000');
+});
+ 
+    </script>
+</body>
+</html>

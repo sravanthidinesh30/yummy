@@ -28,22 +28,22 @@
 <div class="navBar" id="navBar">
   <ul class="navlist d-flex">
     <li class="nav-item">
-      <a href="#" class="nav-link active">home</a>
+      <a href="#" class="nav-link active" id="home" data-link="Home">home</a>
     </li>
      <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">about</a>
+          <a class="nav-link " aria-current="page" href="#" id="about" data-link="Aboutus" >about</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">Menu</a>
+          <a class="nav-link " aria-current="page" href="#" id="menu" data-link="ourmenu">Menu</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">events</a>
+          <a class="nav-link " aria-current="page" href="#" id="events" data-link="Event">events</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">chefs</a>
+          <a class="nav-link " aria-current="page" href="#" id="chefs" data-link="Chefs">chefs</a>
         </li>
          <li class="nav-item">
-          <a class="nav-link " aria-current="page" href="#">gallery</a>
+          <a class="nav-link " aria-current="page" href="#" id="gallery" data-link="Gallery" >gallery</a>
         </li>
          <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -57,9 +57,9 @@
           </ul>
         </li>
          <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">contact</a>
+          <a class="nav-link" aria-current="page" href="#" id="contact" data-link="Contact">contact</a>
         </li>
-        <button class="booktable" data-filter="booktable">book a table</button>
+        <button class="booktable"  id="book" data-link="Book">book a table</button>
   </ul>
   <div class="close" id="closeNav" onclick="shownav()">
     <i class="fa fa-times-circle icon" aria-hidden="true"></i>
@@ -76,13 +76,13 @@
 
   </section>
 <!--===--->
-<section class="main ">
+<section class="main " id="Home">
   <div class="container-fluid py-5">
     <div class="row py-5 container-fluid">
       <div class="col-lg-6 my-5 px-5 pt-3 text-center">
         <h1 class="text-center mt-5">Enjoy Your Healthy Delicious Food</h1>
         <h6 class="text-center my-1">We are a team of talented designers making websites with Bootstrap</h6>
-        <button class="booktable my-3 ps-3 text-align-center text-center" type="button">Book a table</button>
+        <button class="booktable my-3 ps-3 text-align-center text-center" type="button" id="book" data-link="Book">Book a table</button>
         <i class="fa fa-play-circle-o" aria-hidden="true"></i>
                 <span class="text-danger">watch video</span>
 
@@ -94,7 +94,7 @@
   </div>
 </section>
 <!--==================================================================-->
-<section class="Aboutus fade-up">
+<section class="Aboutus fade-up" id="Aboutus">
 
 <div class="container-fluid ">
   <div class="row">
@@ -178,24 +178,24 @@
   <div class="container-fluid row justify-content-center my-5 py-5 " >
     
     <div class="col-lg-3">
-      <h1 class="counterup">232</h1><h3>clients</h3>
+      <h1 class="counterup" data-count="232">0</h1><h3>clients</h3>
     </div>
 
     <div class="col-lg-3">
-      <h1 class="counterup">521</h1><h3>projects</h3>
+      <h1 class="counterup" data-count="521">0</h1><h3>projects</h3>
     </div>
     <div class="col-lg-3">
-      <h1 class="counterup">1453</h1><h3>hours of support</h3>
+      <h1 class="counterup" data-count="1453">0</h1><h3>hours of support</h3>
     </div>
     <div class="col-lg-3">
-      <h1 class="counterup">32</h1><h3>workers</h3>
+      <h1 class="counterup" data-count="32">0</h1><h3>workers</h3>
     </div>
   </div>
   
 </section>
 <!--=====================-->
 
-<section class="container ourmenu ">
+<section class="container ourmenu " id="ourmenu">
   <div class="row my-5">
     <div class="col- col-sm-12 col-md-12 col-lg-12">
       <h6 class="text-center fw-normal">our menu</h6>
@@ -249,40 +249,135 @@
          <h3>Laboriosam Direva</h3>
         <p>Lorem, deren, trataro, filede, nerada</p>
         <h5>$10.95</h5>
+ </div>
+      </div>
+      
+              <div class="tab row text-center" data-aos="fade-up">
 
+         <div class=" justify-content-center filter Breakfast">
+        <h6 class="d-flex justify-content-center my-3">menu</h6>
+        <h3 class="d-flex justify-content-center  my-3 text-danger">Breakfast</h3>
       </div>
       <div class=" col-lg-4 filter Breakfast">
-        <img src="images/b1.jpeg" alt="img-loading" class="Starters">
+        <img src="images/b1.jpeg" alt="img-loading" class="Breakfast">
          <h3>Laboriosam Direva</h3>
         <p>Lorem, deren, trataro, filede, nerada</p>
         <h5>$10.95</h5>
         </div>
         <div class=" col-lg-4 filter Breakfast">
-        <img src="images/b2.jpeg" alt="img-loading" class="Starters">
+        <img src="images/b2.jpeg" alt="img-loading" class="Breakfast">
          <h3>Laboriosam Direva</h3>
         <p>Lorem, deren, trataro, filede, nerada</p>
         <h5>$10.95</h5>
         </div>
         <div class=" col-lg-4 filter Breakfast">
-        <img src="images/b7.jpeg" alt="img-loading" class="Starters">
+        <img src="images/b7.jpeg" alt="img-loading" class="Breakfast">
          <h3>Laboriosam Direva</h3>
         <p>Lorem, deren, trataro, filede, nerada</p>
         <h5>$10.95</h5>
         </div>
         <div class=" col-lg-4 filter Breakfast">
-        <img src="images/b4.jpeg" alt="img-loading" class="Starters">
+        <img src="images/b4.jpeg" alt="img-loading" class="Breakfast">
          <h3>Laboriosam Direva</h3>
         <p>Lorem, deren, trataro, filede, nerada</p>
         <h5>$10.95</h5>
         </div>
         <div class=" col-lg-4 filter Breakfast">
-        <img src="images/b5.jpeg" alt="img-loading" class="Starters">
+        <img src="images/b8.jpeg" alt="img-loading" class="Breakfast">
          <h3>Laboriosam Direva</h3>
         <p>Lorem, deren, trataro, filede, nerada</p>
         <h5>$10.95</h5>
         </div>
         <div class=" col-lg-4 filter Breakfast">
-        <img src="images/b6.jpeg" alt="img-loading" class="Starters">
+        <img src="images/b6.jpeg" alt="img-loading" class="Breakfast">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+    </div>
+
+     <div class="tab row text-center" data-aos="fade-up">
+
+         <div class=" justify-content-center filter Lunch">
+        <h6 class="d-flex justify-content-center my-3">menu</h6>
+        <h3 class="d-flex justify-content-center  my-3 text-danger">Lunch</h3>
+      </div>
+      <div class=" col-lg-4 filter Lunch">
+        <img src="images/l1.jpeg" alt="img-loading" class="Lunch">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Lunch">
+        <img src="images/l2.jpeg" alt="img-loading" class="Lunch">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Lunch">
+        <img src="images/l3.jpeg" alt="img-loading" class="Lunch">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Lunch">
+        <img src="images/l4.jpeg" alt="img-loading" class="Lunch">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Lunch">
+        <img src="images/l5.jpeg" alt="img-loading" class="Lunch">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Lunch">
+        <img src="images/l6.jpeg" alt="img-loading" class="Lunch">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+    </div>
+
+     <div class="tab row text-center" data-aos="fade-up">
+
+         <div class=" justify-content-center filter Dinner">
+        <h6 class="d-flex justify-content-center my-3">menu</h6>
+        <h3 class="d-flex justify-content-center  my-3 text-danger">Dinner</h3>
+      </div>
+      <div class=" col-lg-4 filter Dinner">
+        <img src="images/s1.jpeg" alt="img-loading" class="Dinner">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Dinner">
+        <img src="images/s13.jpeg" alt="img-loading" class="Dinner">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Dinner">
+        <img src="images/s14.jpeg" alt="img-loading" class="Dinner">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Dinner">
+        <img src="images/s12.jpeg" alt="img-loading" class="Dinner">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Dinner">
+        <img src="images/s15.png" alt="img-loading" class="Dinner">
+         <h3>Laboriosam Direva</h3>
+        <p>Lorem, deren, trataro, filede, nerada</p>
+        <h5>$10.95</h5>
+        </div>
+        <div class=" col-lg-4 filter Dinner">
+        <img src="images/s17.jpeg" alt="img-loading" class="Dinner">
          <h3>Laboriosam Direva</h3>
         <p>Lorem, deren, trataro, filede, nerada</p>
         <h5>$10.95</h5>
@@ -292,7 +387,7 @@
   </div>
 </section>
 <!--=========-->
-<section>
+<section id="Event">
   <div class="wrap">
     <i class="fa fa-chevron-left" aria-hidden="true" id="leftarrow"></i>
     <div class="parties">
@@ -333,7 +428,7 @@
   
 </section>
 <!--====-->
-<section class=" container chefs">
+<section class=" container chefs" id="Chefs">
   <div class="row my-5 text-center">
     <h6>chefs</h6>
     <h1>our<span> professionals chefs</span></h1>
@@ -367,7 +462,7 @@
 </section>
 <!---=====-->
 
-<section class="container my-5 fade-up" id="booktable" >
+<section class="container my-5 fade-up booktable-section" id="Book" >
   <div class="row">
     <h6>book a table</h6>
     <h1 class="my-3">book your <span>stay with us</span></h1>
@@ -409,7 +504,7 @@
   </div>
 </section>
 <!--====-->
-<section class="container gallery my-5">
+<section class="container gallery my-5" id="Gallery">
   <div class="row">
     <h6>gallery</h6>
     <h1>check <span>our gallery</span></h1>
@@ -432,7 +527,7 @@
   </div>
 </section>
 <!--=====--->
-<section class="container contact my-5">
+<section class="container contact my-5 " id="Contact">
   <div class="row ">
     <h6 class="my-3">contact</h6>
     <h1 class="my-3">need help?<span>contact us</span></h1>
@@ -601,31 +696,27 @@ scrollContainer.style.scrollBehaviour = "smooth";
   });
 
 //-----//
-  $(document).ready(function(){
-
-    $(".filter-span").click(function(){
+       $(document).ready(function() {
+    $(".filter-span").click(function() {
         var value = $(this).attr('data-filter');
         
-        if(value == "starters")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
+        if (value == "Starters") {
+            $('.filter').hide(); // First, hide all items
+            $('.Starters').show('1000'); // Then show only the items with the Starters class
+        } else {
+            $(".filter").hide('3000');
+            $('.filter.' + value).show('3000');
         }
-        else
-        {
-            $(".filter").not('.' + value).hide('3000');
-            $('.filter').filter('.' + value).show('3000');
-            
-        }
-    });
-    
-      $(".filter-span").click(function() {
+        
         $(".filter-span").removeClass("active");
         $(this).addClass("active");
-
     });
 
+    // Show the starters by default
+    $('.filter').hide();
+    $('.Starters').show('1000');
 });
+ 
   //------//
  
 let swiper = new Swiper(".mySwiper", {
@@ -690,6 +781,67 @@ let swiper = new Swiper(".mySwiper", {
 
     });
   });
+
+ /*--counter up---*/
+ const counters=document.querySelectorAll(".counterup");
+ counters.forEach(counterup =>{
+  let initial_count =0;
+  const final_count = counterup.dataset.count;
+
+  const counting=setInterval(updatecount,1);
+  function updatecount(){
+    
+  
+if(initial_count<1000){
+  initial_count=initial_count+1;
+    counterup.innerText= initial_count;
+
+}
+if(initial_count>=1000){
+  initial_count=initial_count+1;
+    counterup.innerText= initial_count/100+"k";
+
+}
+
+  if(initial_count >= final_count) {
+    clearInterval(counting);
+  }
+  }
+ })
+ //----redirect particular section//
+ $(document).ready(()=>{
+  $('#home').click(function(e){
+    e.target.href=`#${e.target.dataset.link}`
+  });
+   $('#about').click(function(e){
+    e.target.href=`#${e.target.dataset.link}`
+  });
+    $('#menu').click(function(e){
+    e.target.href=`#${e.target.dataset.link}`
+      $('html, body').animate({
+                    scrollTop: $(`#${target}`).offset().top
+                }, 1000); 
+  });
+     $('#events').click(function(e){
+    e.target.href=`#${e.target.dataset.link}`
+  });
+      $('#chefs').click(function(e){
+    e.target.href=`#${e.target.dataset.link}`
+  });
+       $('#gallery').click(function(e){
+    e.target.href=`#${e.target.dataset.link}`
+  });
+        $('#contact').click(function(e){
+    e.target.href=`#${e.target.dataset.link}`
+  });
+          $('#book').click(function (e) {
+                e.preventDefault();
+                const target = $(this).data('link');
+                $('html, body').animate({
+                    scrollTop: $(`#${target}`).offset().top
+                }, 1000); // 1000ms for smooth scrolling
+            });
+ }) ;
 </script>
 </body>
 </html>
